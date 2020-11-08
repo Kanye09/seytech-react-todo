@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+.container{
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  background-color: rgb(220, 240, 242);
+  box-shadow: 2px 2px 5px 2px rgb(123, 203, 227);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn {
+  margin: 5px;
+  padding: 8px 10px;
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.add, .active, .edit{
+  background-color: rgb(61, 176, 218);
+}
+.done-todos {
+  background-color: lightslategray;
+}
+.delete {
+  background-color: red;
+  float: right;
+}
+.done {
+  background-color: lightslategray;
+  float: right;
+}
+.edit{
+  margin-right: 20px;
+ 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+input{
+  padding: 8px 10px;
+  width: 300px;
 }
 
-.App-link {
-  color: #61dafb;
+li{
+  color: #1d0c45;
+  font-weight: bold;
+  list-style-type: none;
+  border: 1px solid rgba(0, 0, 0, 0.201);
+  padding: 2px 5px;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li:hover {
+  background-color: rgb(123, 224, 237);
+  transform: scale(1.05);
 }
+ul{
+  margin: -10px;
+}
+.todo-edit{
+  margin: 50px;
+  background-color: rgb(191, 209, 210);
+  width: fit-content;
+  height: fit-content;
+}
+.go-back{
+  background-color: slategray;
+  display: inline-block;
+}
+
+.save{
+  background-color: rgb(61, 176, 218);
+}
+.cancel{
+  background-color: slategray;
+}
+.delete-edit{
+  background-color: slategray;
+}
+
